@@ -6,7 +6,7 @@ Here’s a README.md file for your project:
 
 This project processes astronomical imagery in FITS format, detects celestial objects, extracts meaningful features, and classifies the objects into categories such as stars, galaxies, and planets.
 
-##Features
+#Features
 	•	Ingests and processes FITS files.
 	•	Detects celestial objects based on image thresholding and clustering.
 	•	Extracts object properties like centroid coordinates, size, and luminosity.
@@ -14,9 +14,9 @@ This project processes astronomical imagery in FITS format, detects celestial ob
 	•	Outputs results to a CSV file for further analysis.
 	•	Provides visualization of detected and classified objects.
 
-##Installation
+#Installation
 
-Requirements
+#Requirements
 	1.	Python 3.8 or higher
 	2.	Libraries:
 	•	numpy
@@ -25,7 +25,7 @@ Requirements
 	•	scikit-image
 	•	matplotlib
 
-Setup
+#Setup
 
 Install the required Python packages:
 ```
@@ -33,7 +33,7 @@ pip install numpy pandas astropy scikit-image matplotlib
 ```
 Clone the repository or copy the scripts to your local system.
 
-##Usage
+#Usage
 
 1. Process FITS File
 
@@ -55,7 +55,7 @@ python process_fits.py hlsp_appp_hst_wfpc2_sfd-pu4k2ho01_f606w_v2_sci.fits class
 	•	Classification: The type of celestial object (Star, Galaxy, Planet, Unknown).
 	•	A visualization showing the detected and classified objects.
 
-##Pipeline Steps
+#Pipeline Steps
 	1.	Data Ingestion:
 	•	Reads the FITS file using the astropy library.
 	•	Extracts the image data for processing.
@@ -77,7 +77,7 @@ python process_fits.py hlsp_appp_hst_wfpc2_sfd-pu4k2ho01_f606w_v2_sci.fits class
 	•	Saves results in a CSV file.
 	•	Visualizes the results with overlaid classifications.
 
-##Examples
+#Examples
 
 Input FITS File
 
@@ -94,11 +94,11 @@ Object_ID	X	Y	Size	Luminosity	Classification
 2	128.45	634.12	300	4000	Galaxy
 3	400.12	300.50	45	2000	Planet
 
-###Customization
+#Customization
 	•	Adjust Classification Criteria: Modify thresholds in the classify_objects() function to better fit your data.
 	•	Add More Features: Integrate machine learning models for more accurate object classification.
 
-###License
+#License
 
 This project is open-source and available under the MIT License.
 
